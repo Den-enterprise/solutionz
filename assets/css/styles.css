@@ -704,6 +704,11 @@ ul.slick-dots {
 	margin-top: 0px!important;
 }
 
+.g-rated img{
+	width: 120px;
+	margin-top: 20px;
+}
+
 .testimonials {
 	margin-top: 140px;
 	background-color: #f7f7f7;
