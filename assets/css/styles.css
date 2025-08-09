@@ -941,7 +941,7 @@ footer ul.social-icons li a {
 }
 
 footer ul.social-icons li a:hover {
-	background-color: #a4c639;
+	background-color: #f41e5f;
 }
 
 footer ul.menu-list li {
@@ -1150,12 +1150,12 @@ footer .contact-form button.filled-button:hover {
 	width: 100%;
 	padding: 30px 30px;
 	display: inline-block;
-	background-color: #a4c639;
-  	font-size: 20px;
-  	color: #121212;
-  	letter-spacing: 0.5px;
-  	font-weight: 700;
-  	transition: all 0.3s;
+	background-color: #f41e5f;
+	font-size: 20px;
+	color: #121212;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	transition: all 0.3s;
 }
 #tabs ul li a i {
 	float: right;
@@ -1306,30 +1306,38 @@ footer .contact-form button.filled-button:hover {
 	}
 }
 
-@media (max-width: 992px) {
 
-	/* .navbar .navbar-brand {
-		top: -6px;
-		position: absolute;
-		left: 30px;
-		top: 10px;
-	} */
+@media (max-width: 1025px) {
+
+	.count-title {
+    font-size: 15px;
+	}
+	
+	.testimonials {
+    padding: 17px 0px;
+	}
+
+}
+
+@media (max-width:1199px) {
+	#navbarResponsive {
+	z-index: 99999;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	}
+
 	.navbar .navbar-brand {
 		width: auto;
 	}
 	.navbar:after {
 		display: none;
 	}
-	#navbarResponsive {
-	    z-index: 99999;
-	    position: absolute;
-	    top: 80px;
-	    left: 0;
-	    width: 100%;
-	    text-align: center;
-	    background-color: #fff;
-	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-	}
+
 	.navbar .navbar-nav .nav-item {
 		border-bottom: 1px solid #eee;
 	}
@@ -1348,14 +1356,4 @@ footer .contact-form button.filled-button:hover {
 		color: #f41e5f !important;
 		border-bottom: none!important;
 	}
-}
-@media (max-width: 1025px) {
-	.count-title {
-    font-size: 15px;
-	}
-	
-	.testimonials {
-    padding: 17px 0px;
-	}
-
 }
