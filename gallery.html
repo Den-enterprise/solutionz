@@ -24,6 +24,8 @@
 
     <!-- Additional CSS Files -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
@@ -70,7 +72,7 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-xl">
         <div class="container">
-          <div class="header-logo"><img src="assets/images/header-logo.png"/></div>
+          <div class="header-logo"><img src="assets/images/header-logo.webp"/></div>
           <a class="navbar-brand" href="index.html"><h2>SolutionZ</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -117,125 +119,451 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
-    <div class="single-services">
+      <!-- =======Gallery========= -->
+    <section id="gallery" class="py-5 bg-light">
       <div class="container">
-        <div class="row" id="tabs">
-          <div class="col-md-4">
-            <ul>
-              <li><a href='#tabs-1'>Market Analysis <i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-2'>Financial Data <i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-3'>Accounting Service <i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-4'>Overall Evaluation <i class="fa fa-angle-right"></i></a></li>
-            </ul>
+        <h2 class="mb-4 text-center">Gallery</h2>
+
+        <div class="row g-3">
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="0">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (1).jpeg" alt="Photo 1">
+              </div>
+            </button>
           </div>
-          <div class="col-md-8">
-            <section class='tabs-content'>
-              <article id='tabs-1'>
-                <img src="assets/images/single_service_01.jpg" alt="">
-                <h4>Market Analysis</h4>
-                <p>Mathematics forms the foundation for problem-solving across all disciplines. We guide students through concepts from basic arithmetic to advanced calculus, ensuring they understand both the “how” and the “why” behind each solution. <br><br> Our sessions combine conceptual clarity with timed practice, helping students excel in both structured exams and competitive tests while building a lasting love for numbers.</p>
-              </article>
-              <article id='tabs-2'>
-                <img src="assets/images/single_service_02.jpg" alt="">
-                <h4>Financial Data</h4>
-                <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet
-                <br><br>Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique odio, vel tristique quam.</p>
-              </article>
-              <article id='tabs-3'>
-                <img src="assets/images/single_service_03.jpg" alt="">
-                <h4>Accounting Service</h4>
-                <p>Mauris lobortis quam id dictum dignissim. Donec pellentesque erat dolor, cursus dapibus turpis hendrerit quis. Suspendisse at suscipit arcu. Nulla sed erat lectus. Nulla facilisi. In sit amet neque sapien. Donec scelerisque mi at gravida efficitur. Nunc lacinia a est eu malesuada. Curabitur eleifend elit sapien, sed pulvinar orci luctus eget. 
-                <br><br>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vel ultrices nulla, ac tincidunt eros. Aenean quis tellus velit. Praesent pretium justo non auctor condimentum.</p>
-              </article>
-              <article id='tabs-4'>
-                <img src="assets/images/single_service_04.jpg" alt="">
-                <h4>Overall Evaluation</h4>
-                <p>Integer vehicula sapien quis dolor efficitur, eget molestie eros tempus. Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis. Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. 
-                <br><br>Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique. Etiam suscipit ante a odio consequat, in ornare lacus suscipit. Cras ac libero massa. Quisque rhoncus velit feugiat vulputate mollis. Donec nisl eros, malesuada sed nisi id, condimentum condimentum quam.</p>
-              </article>
-            </section>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (2).jpeg" alt="Photo 2">
+              </div>
+            </button>
           </div>
+
+        <!-- Video tile with play icon -->
+        <div class="col-6 col-md-4">
+          <button class="btn p-0 w-100 gallery-tile position-relative" data-bs-index="2">
+            <div class="thumb">
+              <video muted playsinline>
+                <source src="assets/images/gallery/video.mp4" type="video/mp4">
+              </video>
+              <!-- Add this span for the icon -->
+              <span class="video-icon">
+                ▶
+              </span>
+            </div>
+          </button>
+        </div>
+
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (3).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (4).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (5).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (6).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (7).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (8).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (9).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (10).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (11).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (12).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (13).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (14).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (15).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (16).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (17).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (18).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (19).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (20).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (21).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (22).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+          <!-- Photo tile -->
+          <div class="col-6 col-md-4">
+            <button class="btn p-0 w-100 gallery-tile" data-bs-index="1">
+              <div class="thumb">
+                <img src="assets/images/gallery/gallery (23).jpeg" alt="Photo 2">
+              </div>
+            </button>
+          </div>
+
+
         </div>
       </div>
-    </div>
 
-    <div class="callback-form callback-services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Request a <em>call back</em></h2>
-              <span>interdum nisl ac urna tempor mollis</span>
+      <!-- Modal with carousel -->
+      <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-          </div>
-          <div class="col-md-12">
-            <div class="contact-form">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
+            <div class="modal-body p-0">
+              <div id="galleryCarousel" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-inner text-center">
+
+                  
+                  <div class="carousel-item active">
+                    <img src="assets/images/gallery/gallery (1).jpeg" class="modal-img" alt="Photo 1 large">
                   </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (2).jpeg" class="modal-img" alt="Photo 2 large">
                   </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
-                    </fieldset>
+
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                      <video class="w-100" controls>
+                        <source src="assets/images/gallery/video.mp4" type="video/mp4">
+                      </video>
+                    </div>
                   </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (3).jpeg" class="modal-img" alt="Photo 1 large">
                   </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
-                    </fieldset>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (4).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+                
+                  <div class="carousel-item ">
+                    <img src="assets/images/gallery/gallery (5).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (6).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item ">
+                    <img src="assets/images/gallery/gallery (7).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (8).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (9).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (10).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (11).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (12).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (13).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (14).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (15).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (16).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (17).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (18).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (19).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (20).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="assets/images/gallery/gallery (21).jpeg" class="modal-img" alt="Photo 1 large">
+                  </div>                
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (22).jpeg" class="modal-img" alt="Photo 2 large">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/gallery/gallery (23).jpeg" class="modal-img" alt="Photo 1 large">
                   </div>
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-partners owl-carousel">
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" alt="">
+      
+
+                <!-- Controls -->
+                <button id="prevBtn" class="carousel-control-prev" type="button">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button id="nextBtn" class="carousel-control-next" type="button">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <style>
+        .video-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 3rem;
+          color: white;
+          opacity: 0.8;
+          pointer-events: none;
+          text-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+
+        /* Thumbnail crop */
+        .thumb {
+          width: 100%;
+          aspect-ratio: 1 / 1; /* square crop */
+          overflow: hidden;
+          border-radius: .5rem;
+        }
+        .thumb img,
+        .thumb video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* crop */
+          display: block;
+        }
+
+        /* Modal images fit to height */
+        .modal-img {
+          max-height: 90vh;
+          max-width: 100%;
+          object-fit: contain; /* full image */
+          margin: auto;
+        }
+      </style>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const modal = new bootstrap.Modal(document.getElementById("galleryModal"));
+          const carouselEl = document.getElementById("galleryCarousel");
+          const carousel = new bootstrap.Carousel(carouselEl, { interval: false });
+          const tiles = document.querySelectorAll(".gallery-tile");
+
+          // Open modal at correct index
+          tiles.forEach(tile => {
+            tile.addEventListener("click", () => {
+              const index = tile.getAttribute("data-bs-index");
+              modal.show();
+              setTimeout(() => carousel.to(index), 150);
+            });
+          });
+
+          // Buttons
+          document.getElementById("prevBtn").addEventListener("click", () => carousel.prev());
+          document.getElementById("nextBtn").addEventListener("click", () => carousel.next());
+
+          // Keyboard arrows
+          document.addEventListener("keydown", e => {
+            if (!document.getElementById("galleryModal").classList.contains("show")) return;
+            if (e.key === "ArrowLeft") carousel.prev();
+            if (e.key === "ArrowRight") carousel.next();
+          });
+        });
+      </script>
+    </section>
 
 
     <!-- Footer Starts Here -->
     <footer>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
-          <div class="col-md-3 footer-item">
-            <h4>Finance Business</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
-            <ul class="social-icons">
-              <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            </ul>
+          <div class="col-md-6 footer-item">
+            <img src="assets\images\footer banner.webp" style="height: 67px;margin-bottom: 20px;"/>
+            <p>Empowering students to achieve academic excellence through personalized learning, expert guidance, and proven teaching methods. Your success is our mission.</p>
+
           </div>
           <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
+            <!-- <h4>Useful Links</h4>
             <ul class="menu-list">
               <li><a href="#">Vivamus ut tellus mi</a></li>
               <li><a href="#">Nulla nec cursus elit</a></li>
@@ -243,45 +571,24 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="#">Cursus augue hasellus</a></li>
               <li><a href="#">Lacinia ac sapien</a></li>
             </ul>
-          </div>
-          <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
-            <ul class="menu-list">
+          </div> -->
+          <!-- <div class="col-md-3 footer-item"> -->
+            
+            <!-- <ul class="menu-list">
               <li><a href="#">About Us</a></li>
               <li><a href="#">How We Work</a></li>
               <li><a href="#">Quick Support</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Privacy Policy</a></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="col-md-3 footer-item last-item">
-            <h4>Contact Us</h4>
-            <div class="contact-form">
-              <form id="contact footer-contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
+            <h4>Connect With Us</h4>
+            <ul class="social-icons">             
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>            
           </div>
         </div>
       </div>
@@ -290,16 +597,62 @@ https://templatemo.com/tm-545-finance-business
     <div class="sub-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <p>Copyright &copy; 2020 Financial Business Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+          <div class="col-md-12 text-center">
+            <a href="https://den-enterprise.github.io/Web-Creator" target="_blank" rel="noopener" aria-label="Visit Web Creator">
+              <img src="assets/images/web-creator.png" style="width:120px;" alt="Web Creator Logo" />
+            </a>
           </div>
         </div>
       </div>
     </div>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67a55d26825083258e113492/1ijev7o3t';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+<!--End of Tawk.to Script-->
 
     <!-- Bootstrap core JavaScript -->
+    <script>
+      const mediaModal = new bootstrap.Modal(document.getElementById('mediaModal'));
+      const modalImage = document.getElementById('modalImage');
+      const modalVideo = document.getElementById('modalVideo');
+
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const type = item.getAttribute('data-type');
+          const src = item.getAttribute('data-src');
+
+          if (type === 'image') {
+            modalImage.src = src;
+            modalImage.classList.remove('d-none');
+            modalVideo.classList.add('d-none');
+            modalVideo.pause();
+          } else if (type === 'video') {
+            modalVideo.src = src;
+            modalVideo.classList.remove('d-none');
+            modalImage.classList.add('d-none');
+            modalVideo.play();
+          }
+
+          mediaModal.show();
+        });
+      });
+
+      document.getElementById('mediaModal').addEventListener('hidden.bs.modal', () => {
+        modalVideo.pause();
+        modalVideo.src = '';
+        modalImage.src = '';
+      });
+    </script>
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

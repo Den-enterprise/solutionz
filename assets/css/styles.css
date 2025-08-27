@@ -171,6 +171,89 @@ a.border-button:hover {
   }
 }
 
+
+/* 
+Logo Placement */
+@media (max-width:1199px) {
+.navbar-brand{
+	position: absolute;
+    left: 181px;
+}
+}
+@media (max-width:1112px) {
+.navbar-brand{
+	position: absolute;
+    left: 144px;
+}
+}
+@media (max-width:1062px) {
+.navbar-brand{
+	position: absolute;
+    left: 120px;
+}
+}
+@media (max-width:1008px) {
+.navbar-brand{
+	position: absolute;
+    left: 90px;
+}
+}
+@media (max-width:991px) {
+.navbar-brand{
+	position: absolute;
+    left: 200px;
+}
+}
+@media (max-width:937px) {
+.navbar-brand{
+	position: absolute;
+    left: 180px;
+}
+}
+@media (max-width:859px) {
+.navbar-brand{
+	position: absolute;
+    left: 140px;
+}
+}
+@media (max-width:791px) {
+.navbar-brand{
+	position: absolute;
+    left: 110px;
+}
+}
+@media (max-width:767px) {
+.navbar-brand{
+	position: absolute;
+    left: 180px;
+}
+}
+@media (max-width:710px) {
+.navbar-brand{
+	position: absolute;
+    left: 150px;
+}
+}
+@media (max-width:650px) {
+.navbar-brand{
+	position: absolute;
+    left: 120px;
+}
+}
+@media (max-width:570px) {
+.header-logo{
+	margin-left: 20px;
+}	
+.navbar-brand{
+	position: absolute;
+    left: 95px;
+}
+}
+@media (max-width: 410px) {
+  .navbar-brand {
+    display: none;
+  }
+}
 /* Sub Header Style */
 
 .sub-header {
@@ -392,15 +475,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/slide_01.webp);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_02.jpg);
+	background-image: url(../images/slide_02.webp);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03.jpg);
+	background-image: url(../images/slide_03.webp);
 }
 
 .Modern-Slider .NextArrow{
@@ -446,6 +529,8 @@ ul.slick-dots {
 }
 
 .Modern-Slider .text-content {
+	margin-top: 50px;
+	margin-bottom: 50px;
 	text-align: left;
   	width: 75%;
   	position: absolute;
@@ -648,7 +733,7 @@ ul.slick-dots {
 /* More Info */
 
 .more-info {
-	margin-top: 140px;
+	margin-top: 25px;
 }
 
 .more-info .left-image img {
@@ -685,7 +770,7 @@ ul.slick-dots {
 .more-info .right-content h2 {
 	font-size: 36px;
 	font-weight: 600;
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 }
 
 .more-info .right-content em {
@@ -694,6 +779,7 @@ ul.slick-dots {
 }
 
 .more-info .right-content p {
+	max-width: 90%;
 	margin-bottom: 30px;
 }
 
@@ -894,6 +980,30 @@ ul.slick-dots {
 	margin: auto;
 }
 
+
+ /* Gallery Images */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* Crops image/video */
+    }
+    .video-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      color: white;
+      text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+      pointer-events: none;
+    }
 
 
 /* Footer Style */
@@ -1260,7 +1370,7 @@ footer .contact-form button.filled-button:hover {
 }
 
 .contact-information .contact-item i {
-	color: #a4c639;
+	color: #ec1c5b;
 	font-size: 48px;
 	margin-bottom: 40px;
 }
@@ -1322,6 +1432,7 @@ footer .contact-form button.filled-button:hover {
 		margin-bottom: 30px;
 	}
 	.fun-facts .left-content {
+		text-align: center;
 		margin-right: 0px;
 		margin-bottom: 30px;
 	}
