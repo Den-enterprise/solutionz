@@ -103,6 +103,9 @@ a.border-button:hover {
   z-index: 9999999;
   color: #fff;
 }
+.navbar-brand em{
+	font-size: 25px !important;
+}
 
 #preloader .jumper {
   left: 0;
@@ -251,8 +254,14 @@ Logo Placement */
 }
 @media (max-width: 410px) {
   .navbar-brand {
-    display: none;
+    left: 95px
   }
+  .navbar-brand h2{
+	font-size: 26px !important;
+  }
+  .navbar-brand em{
+	font-size: 18px !important;
+ }
 }
 /* Sub Header Style */
 
@@ -355,6 +364,7 @@ header .navbar {
 	margin-top: 12px;
 	outline: none;
 }
+
 .navbar .navbar-brand h2 {
 	color: #fff;
 	text-transform: uppercase;
